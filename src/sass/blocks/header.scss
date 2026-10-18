@@ -46,3 +46,20 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.header {
+		padding: 45px 0px 0px 0px;
+		&__logo {
+			font-size: 24px;
+		}
+		&__menu {
+			&-link {
+				font-size: 20px;
+			}
+			&-divider {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
