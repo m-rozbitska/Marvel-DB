@@ -53,11 +53,32 @@
 			font-size: 24px;
 		}
 		&__menu {
+			&-list {
+				gap: 8px;
+			}
 			&-link {
 				font-size: 20px;
 			}
 			&-divider {
 				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.header {
+		padding: 55px 0px 0px 0px;
+		&__logo {
+			font-size: 28px;
+		}
+		&__menu {
+			&-link {
+				font-size: 24px;
+			}
+			&-divider {
+				font-size: 24px;
 			}
 		}
 	}
