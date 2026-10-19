@@ -1,0 +1,14 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.btn-main {
+	@include button;
+	background-color: $red;
+	width: 101px;
+}
+
+.btn-secondary {
+	@include button;
+	background-color: $grey;
+	width: 101px;
+}
