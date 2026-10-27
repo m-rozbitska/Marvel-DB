@@ -1,0 +1,129 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.comics {
+	padding: 25px 0px 25px 0px;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 25px;
+	}
+
+	&__item {
+		justify-items: center;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 26px;
+		color: $dark;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-top: 18px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: $dark;
+	}
+	&__count {
+		margin-top: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: $dark;
+	}
+	&__lang {
+		margin-top: 18px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: $dark;
+	}
+	&__price {
+		margin-top: 18px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		color: $red;
+	}
+	&__btn {
+		margin-top: 45px;
+		display: none;
+		width: 170px;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 21px;
+		color: $dark;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+  .comics {
+    padding: 45px 0 45px 0;
+    
+    &__item {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    &__img {
+      flex-shrink: 0;
+      width: 293px;
+    }
+
+    &__descr {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+	.comics {
+		padding: 55px 0 55px 0;
+		&__item {
+			flex-direction: column;
+			gap: 0;
+		}
+		&__grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		&__title {
+			margin-top: 10px;
+			font-size: 14px;
+		}
+		&__text,
+		&__count,
+		&__lang {
+			display: none;
+		}
+		&__price {
+			margin-top: 9px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 16px;
+			color: $dark;
+		}
+		&__link {
+			display: none;
+		}
+		&__btn {
+			display: block;
+		}
+	}
+}
+	

@@ -2,6 +2,9 @@
 @use "/src/sass/base/variables.scss";
 @use "/src/sass/base/mixins.scss";
 
+@use "/src/sass/ui/buttons.scss";
+
+
 @use "/src/sass/base/basic.scss";
 
 @use "/src/sass/blocks/header.scss";
@@ -11,4 +14,3 @@
 @use "/src/sass/blocks/comics.scss";
 
 
-@use "/src/sass/ui/buttons.scss";
